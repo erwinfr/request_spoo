@@ -35,7 +35,7 @@ with codecs.open('./seed_urls.txt', 'r' ,"utf-8-sig") as input_file:
     )
     """Code to go line by line through the input file, insert random IP as requester and insert user-agent"""
     for line in input_file:
-        line2 = line.strip() 
+        line2 = line.strip()
         random_ip2 = str( ipaddress.IPv4Address( random.randint( 0, 4294967295 ) ) )
         user_agent = random.choice(user_agent_list)
         ##modified_line = line.replace(line[:47], "cp4s.cool8.nl "+"httpd: "+random_ip2+" 185.87.187.124"+filler1+open_connect+filler2)

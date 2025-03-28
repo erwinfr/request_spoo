@@ -11,3 +11,6 @@ codecs
 requests
 time
 bs4
+pandas
+lxml
+Flask
